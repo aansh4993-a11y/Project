@@ -9,8 +9,6 @@ body{
     background:#000;
     color:#fff;
 }
-
-/* NAVBAR */
 .navbar{
     display:flex;
     align-items:center;
@@ -74,8 +72,6 @@ nav a:hover{
 .hero-btn:hover{
     background:#ff5733;
 }
-
-/* MISSIONS */
 .missions{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -114,16 +110,12 @@ nav a:hover{
     color:#ccc;
     font-size:14px;
 }
-
-/* FOOTER */
 footer{
     background:#0b3d91;
     text-align:center;
     padding:20px;
     font-size:14px;
 }
-
-/* RESPONSIVE */
 @media(max-width:900px){
     nav{
         display:none;
