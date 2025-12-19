@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:15px 50px;
+    background:#0b3d91;
+}
+
+.logo{
+    width:60px;
+    margin-right:40px;
+}
+
+nav a{
+    margin-right:20px;
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    height:85vh;
+    background:url("hero.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding-left:70px;
+}
+
+.hero-content{
+    max-width:520px;
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:8px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+    color:#ddd;
+}
+
+.hero-btn{
+    background:#fc3d21;
+    border:none;
+    padding:12px 28px;
+    color:#fff;
+    font-size:14px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#ff5733;
+}
+
+/* MISSIONS */
+.missions{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:60px;
+}
+
+.card{
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(255,255,255,0.08);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#ccc;
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    background:#0b3d91;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    nav{
+        display:none;
+    }
+
+    .hero{
+        padding:30px;
+    }
+
+    .missions{
+        grid-template-columns:1fr;
+        padding:30px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+}
